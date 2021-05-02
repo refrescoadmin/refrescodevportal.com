@@ -44,7 +44,7 @@ button:hover {
   position: relative;
 }
 
-img.Refresco Portal {
+img.avatar {
   width: 40%;
   border-radius: 50%;
 }
@@ -58,8 +58,8 @@ span.psw {
   padding-top: 16px;
 }
 
-/* The Refresco (background) */
-.Refresco {
+/* The Modal (background) */
+.modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -73,8 +73,8 @@ span.psw {
   padding-top: 60px;
 }
 
-/* Refresco Content/Box */
-.Refresco-content {
+/* Modal Content/Box */
+.modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
@@ -127,21 +127,21 @@ span.psw {
 </head>
 <body>
 
-<h2>Refresco Login Form</h2>
+<h2>Modal Login Form</h2>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-<div id="id01" class="Refresco">
+<div id="id01" class="modal">
   
-  <form class="Refresco-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Refresco">&times;</span>
-      <img src="img_Refresco Portal.png" alt="Refresco Portal" class="Refresco Portal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
-      <label for="uname"><b>email</b></label>
-      <input type="text" placeholder="Enter email" name="uname" required>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
@@ -160,13 +160,13 @@ span.psw {
 </div>
 
 <script>
-// Get the Refresco
-var Refresco = document.getElementById('id01');
+// Get the modal
+var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the Refresco, close it
+// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == Refresco) {
-        Refresco.style.display = "none";
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
 </script>
