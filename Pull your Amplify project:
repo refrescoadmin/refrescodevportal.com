@@ -1,0 +1,1 @@
+amplify pull --appId d2w3beqve2vjfm --envName staging
